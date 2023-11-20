@@ -10,11 +10,6 @@ def find_couple(l, i):
 
 def solution(l):
     #Notice - x*q = y and y*p = z => x*q*p = z.
-    #For every x find all y's.
-    #For every y find all z's.
-    #Such search takes O(n^2).
-    #Could do better? find example of O(n^2) such triplets to prove optimality. 
-    #for x find y
     couples = [0 for _ in range(len(l))]
     count = 0
     for i in range(len(l)-2, -1, -1):
